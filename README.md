@@ -1,0 +1,2 @@
+# shopX
+Android Application
