@@ -5,65 +5,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradientsample"
     tools:context=".Homepage">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="206dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="105dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="165dp"
-        android:onClick="GetItems"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="feedbak"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="113dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="110dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="129dp"
-        android:layout_height="93dp"
+        android:layout_width="169dp"
+        android:layout_height="129dp"
         android:layout_marginStart="141dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="141dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="84dp"
         android:onClick="Profilepage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
-        app:srcCompat="@drawable/d23" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="118dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="76dp"
+        android:onClick="GetItems"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orderlist" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="141dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="114dp"
+        android:onClick="feedbak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/feedback" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="127dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="46dp"
+        android:onClick="AddItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/additem" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,11 @@
 package com.example.shopx;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.shopx.feedback.AddRate;
 import com.example.shopx.itemManage.AddItem;
-import com.example.shopx.userManage.Customer_profile_up;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,12 +27,17 @@ public class Homepage extends AppCompatActivity {
     }
 
     public void Profilepage(View view) {
-        Intent i = new Intent(getApplicationContext(), Customer_profile_up.class);
+        Intent i = new Intent(getApplicationContext(), ProfileLogin.class);
         startActivity(i);
     }
 
     public void GetItems(View view) {
         Intent i = new Intent(getApplicationContext(), ItemList.class);
+        startActivity(i);
+    }
+
+    public void AddItem(View view) {
+        Intent i = new Intent(getApplicationContext(), AddItem.class);
         startActivity(i);
     }
 }

@@ -20,6 +20,7 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".ItemList"/>
         <activity android:name=".Homepage"/>
+        <activity android:name=".ProfileLogin"/>
         <activity android:name=".userManage.Customer_profile"/>
         <activity android:name=".userManage.Customer_profile_up"/>
         <activity android:name=".itemManage.AddItem"/>
